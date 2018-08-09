@@ -7,6 +7,12 @@
     <title>Apagar Produto</title>
 </head>
 <body>
-    <h1>Tem certeza que quer apagar o(a) </h1>
+    <h1>Tem certeza que quer apagar o(a) {{product.nome}}?</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="submit" value="Sim, Apagar">
+        <a href="{% url 'products_list' %}"></a>
+    </form>
 </body>
 </html>

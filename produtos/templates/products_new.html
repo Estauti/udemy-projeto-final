@@ -8,6 +8,14 @@
     <title>Cadastro de Produto</title>
 </head>
 <body>
-    
+    <h2>Cadastre Abaixo:</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Salvar">
+    </form>
+
+    <p style="padding-top:50px;"><a href="{% url 'home' %}">Voltar para Home</a></p> 
 </body>
 </html>

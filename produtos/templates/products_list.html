@@ -7,6 +7,13 @@
     <title>Listagem</title>
 </head>
 <body>
-    <h1>Lista de Produtos</h1>
+    <h2>Lista de Produtos</h1>
+
+    <ol>
+        {% for prod in products %}
+            <li>{{prod}} - <a href="{% url 'products_edit' prod.id %}">Editar</a> - <a href="{% url 'products_delete' prod.id %}">Excluir</a></li>
+        {% endfor %}        
+    </ol>
+    <p style="padding-top:50px;"><a href="{% url 'home' %}">Voltar para Home</a></p> 
 </body>
 </html>
