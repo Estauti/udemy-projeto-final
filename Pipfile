@@ -11,6 +11,7 @@ python-decouple = "*"
 dj-database-url = "*"
 dj-static = "*"
 gunicorn = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 
