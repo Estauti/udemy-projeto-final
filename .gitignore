@@ -3,4 +3,4 @@
 *.pyo
 media
 *.sqlite3
-migrations
+.vscode
