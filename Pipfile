@@ -10,6 +10,7 @@ django-bootstrap-form = "*"
 python-decouple = "*"
 dj-database-url = "*"
 dj-static = "*"
+gunicorn = "*"
 
 [dev-packages]
 "psycopg2" = "*"
